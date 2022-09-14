@@ -3,30 +3,48 @@
 <html>
 
    <head>
-      <title>Request Header Parser</title>
-      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <title>Request Header Parser Microservice</title>
+      <meta name="description" content="Request Header Parser Microservice">
+      <meta name="author" content="Mseong">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
       <link href="stylesheet/style.css" rel="stylesheet" type="text/css">
    </head>
 
-   <body>
-      <div class="container">
-        <h2>Request Header Parser Microservice</h2>
-
-        <h3>Example Usage:</h3>
-        <p>
-          <a href="api/whoami">[base url]/api/whoami</a>
-        </p>
-
-        <h3>Example Output:</h3>
-        <p>
-          <code>{"ipaddress":"::ffff:159.20.14.100","language":"en-US,en;q=0.5",<br>"software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</code>
-        </p>
+   <body class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 inner-container col-xs-10 col-xs-offset-1">
+          <h2>Request Header Parser Microservice</h2>
+          <hr/>
+          <section class="description">
+            <h3>API Usage</h3>
+            <p>
+              This service parses your GET request header and returns your IP address, language, operating system and browser specs. 
+            </p>
+          </section>
+          <div class="row">
+            <section class="col-sm-6">
+              <h3>Example Usage:</h3>
+              <p>
+                <a href="api/whoami">https://microservice-header-parser-mseong.netlify.com/api/whoami</a>
+              </p>
+            </section>
+            <section class="col-sm-6">
+              <h3>Example Output:</h3>
+              <p>
+                <code>{"ipaddress":"113.211.209.107",<br>"language":"en-US,en;q=0.5",<br>"software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</code>
+              </p>
+            </section>
+          </div>
+        </div>
       </div>
       <div class="footer">
         <p>
-          by <a href="https://www.freecodecamp.org">freeCodeCamp</a>
+          Github Repo <a href="https://github.com/mseong123/microservice-headerparser" target="_blank"><span class="fa fa-github"></span></a>
         </p>
+        <p>Built by<a href="https://mseong.my"> Mseong</a></p>
       </div>
    </body>
 

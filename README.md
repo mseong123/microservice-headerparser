@@ -1,3 +1,6 @@
 # Request Header Parser Microservice
+This service parses your GET request header and returns your IP address, language, operating system and browser specs. 
 
-This is the boilerplate for the Request Header Parser Microservice project. Instructions for building your project can be found at https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/request-header-parser-microservice
+*Built using NodeJS and ExpressJS.
+*Hosted on Netlify.
+*Server-side API is built using Netlify's serverless AWS Lambda Functions. 
